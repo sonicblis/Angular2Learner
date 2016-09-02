@@ -1,0 +1,11 @@
+button{
+    border: solid 1px #888;
+    background: dodgerblue;
+    color: white;
+    padding: 5px 10px;
+}
+
+stats{
+    display: block;
+    margin-bottom: 10px;
+}
