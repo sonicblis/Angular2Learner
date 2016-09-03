@@ -1,0 +1,52 @@
+.material-input-container {
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.material-input-container label {
+	color: #c9c9c9;
+	cursor: text;
+	font-family: arial;
+	font-size: 1em;
+	left: 7px;
+	position: relative;
+	top: 25px;
+	transition: all 150ms;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.material-input-container input[type=text] {
+	border: 1px solid transparent;
+	border-bottom: 1px solid #c9c9c9;
+	box-shadow: 0;
+	color: #555;
+	display: block;
+	font-family: arial;
+	font-size: 1em;
+	padding: 6px;
+	width: 100%;
+}
+
+.material-input-container.focused label {
+	color: #00b;
+}
+
+.material-input-container.focused label,
+.material-input-container.populated label {
+	font-size: 0.70em;
+	left: 7px;
+	cursor: default;
+	top: 0;
+}
+
+.material-input-container:not(.populated) label {
+	pointer-events: none;
+}
+
+.material-input-container.focused input[type=text] {
+	outline: 0;
+	border-bottom: 1px solid transparent;
+	box-shadow: inset 0 -2px 0 #0000bb;
+}

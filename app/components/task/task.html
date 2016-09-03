@@ -1,1 +1,1 @@
-<div><input type="checkbox" [(ngModel)]="task.complete"> {{task.title}}</div>
+<div [ngClass]="{ complete: task.complete }"><label><input type="checkbox" [(ngModel)]="task.complete"> {{task.title}}</label></div>

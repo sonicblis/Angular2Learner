@@ -6,8 +6,8 @@
 		})
 			.Class({
 				constructor: [app.taskService, function (taskService) {
-					this.complete = () => taskService.complete();
-					this.total = 0;
+					this.complete = () => taskService.getCompleteCount();
+					this.total = () => taskService.getTotalCount();
 				}]
 			})
 })(window.app || (window.app = {}));
