@@ -4,6 +4,7 @@
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="app/modules/langdoggler/langdoggler.css">
     <!-- 1. Load libraries -->
     <!-- IE required polyfill -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -16,7 +17,10 @@
     <script src="node_modules/@angular/forms/bundles/forms.umd.min.js"></script>
     <script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
     <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
-    <!-- 2. Load our 'modules' -->
+    <!-- 2. Load our 'third party module' -->
+    <script src='app/modules/langdoggler/MaterialModule.js'></script>
+    <script src='app/modules/langdoggler/materialInputComponent.js'></script>
+    <!-- 3. Load our 'modules' -->
     <script src='app/injectables/task.service.js'></script>
     <script src='app/components/stats/stats.js'></script>
     <script src='app/components/core/core.component.js'></script>

@@ -6,7 +6,7 @@
 		})
 			.Class({
 				constructor: [app.taskService, function (taskService) {
-					this.tasks = taskService.tasks();
+					this.tasks = taskService.getTasks();
 				}]
 			})
 })(window.app || (window.app = {}));
