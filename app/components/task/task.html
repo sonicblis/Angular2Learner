@@ -1,1 +1,6 @@
-<div [ngClass]="{ complete: task.complete }"><label><input type="checkbox" [(ngModel)]="task.complete"> {{task.title}}</label></div>
+<div [ngClass]="{ complete: task.complete }">
+    <label>
+        <input type="checkbox" (click)="onToggleComplete(task)" [checked]="task.complete"> {{task.title}}
+    </label>
+    <button (click)="onRemove(task)">Delete</button>
+</div>

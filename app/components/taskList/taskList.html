@@ -1,1 +1,1 @@
-<task *ngFor="let task of tasks" [task]="task"></task>
+<task *ngFor="let task of tasks" [task]="task" (taskToggleCompleted)="toggleTask(task)" (taskRemoved)="removeTask(task)"></task>
